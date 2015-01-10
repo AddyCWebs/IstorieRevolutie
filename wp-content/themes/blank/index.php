@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php if (is_front_page()) : get_header('mainheader'); else : get_header(); endif; ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<?php if (has_post_thumbnail()): ?>
 		<div class="fullpic"><?php the_post_thumbnail(); ?>
