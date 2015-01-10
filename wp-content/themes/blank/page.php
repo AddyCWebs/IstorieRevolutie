@@ -3,7 +3,11 @@
 	<?php if (has_post_thumbnail()): ?>
 		<div class="fullpic"><?php the_post_thumbnail(); ?>
 	<?php endif ?>
-		<h1><?php the_title(); ?></h1></div>
+	<div class="wrapper" style="height:100%"> 
+		<div class="titleWrapper">
+			<h1><?php the_title(); ?></h1>
+		</div>
+	</div>
 <h4>Posted on <?php the_time('F jS, Y') ?></h4>
 <p><?php the_content(__('(more...)')); ?></p>
 <hr> <?php endwhile; else: ?>
