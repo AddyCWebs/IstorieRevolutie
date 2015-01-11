@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<div class="headerShadow">
 	<?php if (has_post_thumbnail()): ?>
+	<div class="headerShadow">
 		<div id="fullpic">
 			<?php the_post_thumbnail(); ?>
 			<div class="wrapper" style="height:100%"> 
@@ -11,8 +11,9 @@
 			</div>
 		</div>
 	<?php else: ?>
+	<div class="headerShadow" style="height: auto; background-color:white; position: relative; z-index:5;">
 	<div class="wrapperWrapper">
-		<div class="wrapper"> 
+		<div class="wrapper" style="padding-left: 25px;"> 
 			<h1><?php the_title(); ?></h1>
 		</div>
 	</div>
