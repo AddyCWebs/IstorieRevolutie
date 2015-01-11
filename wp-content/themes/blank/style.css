@@ -252,6 +252,9 @@ h3 {
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
 	padding: 25px;
 	padding-top: 75px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
 }
 
 .headerShadow {
@@ -330,11 +333,6 @@ footer {
 	padding: 25px;
 }
 
-.postDescWrapper {
-	max-height: 50px;
-	text- verflow: ellipsis;
-}
-
 .button {
 	color: white;
 	font-weight: 300;
@@ -349,4 +347,14 @@ footer {
 	color: white;
 	background-color: #1A237E;
 	box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.25);
+}
+
+.nocol {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+}
+
+p {
+	margin-top: 0px;
 }

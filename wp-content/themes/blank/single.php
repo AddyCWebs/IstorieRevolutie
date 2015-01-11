@@ -48,7 +48,7 @@
 	</div>
 	<div class="wrapperWrapper">
 		<div class="wrapper mainContent"> 
-			<p><?php the_content(); ?></p>
+			<?php the_content(); ?>
 		</div>
 	</div>
 	<?php endwhile; endif;?>
