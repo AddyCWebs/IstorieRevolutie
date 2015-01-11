@@ -11,7 +11,7 @@
 	</head>
 	<body lang="ro">
 		<div class="navWrapper">
-			<div class="logoWrapper" style="background-image:url('<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>')"></div>
+			<div class="logoWrapper" style="background-image:url('<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>')"><a id="logo-link" href="#"></a></div>
 			<nav>
 				<ul class="nav">
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>

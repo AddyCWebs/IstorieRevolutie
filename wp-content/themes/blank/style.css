@@ -51,6 +51,14 @@ body, html {
 	background-repeat: no-repeat;
 }
 
+#logo-link {
+	position = relative;
+	float: left;
+	width: 400px;
+	height: 100%;
+	background-color: transparent;
+}
+
 nav {
 	position: relative;
 	float: right;
