@@ -2,6 +2,7 @@
 <div class="wrapperWrapper"><div class="wrapper">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="postWrapper">
+		<h2><?php the_title() ?></h2>
 		<div class="postAttWrapper">
 			<div class="postAttAutWrapper">
 			<div class="postAttAutImg">
@@ -29,13 +30,15 @@
 		</div>
 		</div>
 
+		<?php if (has_post_thumbnail()): ?>
 			<div class="featImgWrapper">
-				<?php if (has_post_thumbnail()) {
-					the_post_thumbnail();
-				} ?>
+				<?php the_post_thumbnail(); ?>
 			</div>
-
-			<div class="postDescWrapper"></div>
+		<?php endif; ?>
+			<div class="postDescWrapper">
+				<p><?php the_excerpt() ?>
+			</div>
+			<span class="button">Citeste</span>
 		</div>
 		<hr> <?php endwhile; else: ?>
 		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
