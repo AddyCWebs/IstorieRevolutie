@@ -1,4 +1,3 @@
-
 <?php if (is_front_page()) : get_header('mainheader'); else : get_header(); endif; ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<?php if (has_post_thumbnail()): ?>
@@ -10,10 +9,7 @@
 <hr> <?php endwhile; else: ?>
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
 </div>
-<?php get_sidebar(); ?>
 </div>
-<script>
-	var img = document.getElementsByClassName('attachment-post-thumbnail');
 
 
 <div class="wrapper">
