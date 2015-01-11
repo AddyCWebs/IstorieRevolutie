@@ -1,5 +1,5 @@
 <?php if (is_front_page()) : get_header('mainheader'); else : get_header(); endif; ?>
-<div class="wrapperWrapper"><div class="wrapper mainContent" style="padding-top:25px;">
+<div class="wrapperWrapper"><div class="wrapper mainContent nocol" style="padding-top:25px;">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="postWrapper">
 		<h2><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></h2>
@@ -36,7 +36,7 @@
 			</div>
 		<?php endif; ?>
 			<div class="postDescWrapper">
-				<p><?php the_excerpt() ?>
+				<p><?php the_excerpt() ?></p>
 			</div>
 			<a href="<?php echo get_permalink(); ?>"><span class="button">Citeste</span></a>
 		</div>
